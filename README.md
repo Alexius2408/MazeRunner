@@ -1,2 +1,3 @@
-# MazeRunner
-This is a simple Maze Website that works with html and css. Later I Update it with javascript so it can generate random mazes on different difficultys and mabye more. Have Fun :)
+## MazeRunner
+
+This is a simple maze website that works with HTML and CSS. Later I will update it with JavaScript so it can generate random mazes on different difficulties and maybe more. Have fun :)

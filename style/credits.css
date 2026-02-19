@@ -10,6 +10,10 @@
 
 
 @media (orientation: landscape) {
+    h1, h2, h3 {
+        display: flex;
+        justify-content: center;
+    }
     body {
         background-color: var(--bg_color);
         font-family: Arial, sans-serif;
@@ -63,4 +67,5 @@
         margin: 0.5rem 1rem;
         cursor: pointer;
     }
+
 }

@@ -1,0 +1,67 @@
+:root {
+  --head_color: #55433b;
+  --text_color: #bda79e;
+  --brown: #cc561e;
+  --dark_brown: #5d270e;
+  --green: #108e26;
+  --lime_green: #3fa43f;
+  --dark_green: #005a00;
+  --bg_color: #f5f5dc;
+  --bg_joystick: #ecd2ba;
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: var(--bg_color);
+    font-family: Arial, sans-serif;
+  }
+
+  img {
+    width: 32rem;
+    height: 32rem;
+  }
+
+  .maze {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .joystick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .joystick button {
+    background-color: var(--green);
+    color: black;
+    border: 0.17rem solid var(--dark_brown);
+    border-radius: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .middlerow {
+    display: flex;
+    gap: 0.15rem;
+  }
+
+  .joystick .up,
+  .joystick .down {
+    padding: 2rem;
+  }
+
+  .joystick .left,
+  .joystick .right {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+
+  .joystick .middle {
+    color: transparent;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 100rem;
+  }
+}

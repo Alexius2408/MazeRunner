@@ -10,10 +10,6 @@
 
 
 @media (orientation: landscape) {
-    h1, h2, h3 {
-        display: flex;
-        justify-content: center;
-    }
     body {
         background-color: var(--bg_color);
         font-family: Arial, sans-serif;
@@ -24,6 +20,13 @@
         font-size: 3rem;
         text-align: center;
         margin: 2rem 0;
+    }
+
+    h3 {
+        color: var(--head_color);
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 10rem 0 0rem 0;
     }
 
     table { 
@@ -67,5 +70,4 @@
         margin: 0.5rem 1rem;
         cursor: pointer;
     }
-
 }

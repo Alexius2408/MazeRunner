@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Complete the maze</title>
+    <link rel="stylesheet" href="../style/maze.css" />
+    <link rel="stylesheet" href="../style/audio.css" />
+  </head>
+  <body>
+    <div class="maze">
+      <div id="maze_grid" class="maze_grid"></div>
+
+      <div class="controls">
+        <div class="joystick">
+          <button class="up">↑</button>
+          <div class="middlerow">
+            <button class="left">←</button>
+            <button class="middle"></button>
+            <button class="right">→</button>
+          </div>
+          <button class="down">↓</button>
+        </div>
+
+        <div id="win_message" class="win_message">
+          <h1>You Win</h1>
+          <button id="home_button" class="home">Return to Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/audio.js"></script>
+    <script src="../script/generate_maze.js"></script>
+    <script src="../script/draw_maze.js"></script>
+    <script src="../script/maze.js"></script>
+  </body>
+</html>

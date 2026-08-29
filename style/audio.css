@@ -1,0 +1,92 @@
+/* From: https://www.smartinfogl.com/2024/01/modern-javascript-volume-slider.html */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.audio-widget {
+    --aw-width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.audio-widget--floating {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    z-index: 9999;
+    padding: 8px 12px;
+    background: rgba(245, 245, 220, 0.92);
+    border: 2px solid #cc561e;
+    border-radius: 999px;
+}
+
+.audio-widget__icon {
+    flex: none;
+    cursor: pointer;
+    outline-offset: 3px;
+}
+
+.audio-widget__icon path {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.audio-widget .hidden {
+    visibility: hidden;
+    opacity: 0 !important;
+}
+
+/* collapsed by default */
+.audio-widget__field {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.2s ease, opacity 0.2s ease, visibility 0s linear 0.2s;
+}
+
+/* expanded when the icon or slider is active */
+.audio-widget--open .audio-widget__field {
+    width: var(--aw-width);
+    opacity: 1;
+    visibility: visible;
+    transition: width 0.2s ease, opacity 0.2s ease, visibility 0s;
+}
+
+.audio-widget__range {
+    flex: none;
+    height: 6px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    width: var(--aw-width);
+    border-radius: 10px;
+    transition: height 0.15s ease-in;
+    background: #b8a99a;
+}
+
+.audio-widget__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    border: none;
+    box-shadow: calc(var(--aw-width) * -1) 0 0 var(--aw-width) #108e26;
+}
+
+.audio-widget__range::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    border: none;
+    box-shadow: calc(var(--aw-width) * -1) 0 0 var(--aw-width) #108e26;
+}
+
+.audio-widget__range:hover {
+    height: 10px;
+}
